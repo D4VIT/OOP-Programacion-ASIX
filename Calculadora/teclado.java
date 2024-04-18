@@ -6,8 +6,7 @@ class Teclado
 {
     public static String leer(String texto) {
         Scanner input = new Scanner(System.in);
-        Pantalla pantalla = new Pantalla();
-        pantalla.escribir(texto);
+        Pantalla.escribir(texto);
 
         String result = input.nextLine();
 
