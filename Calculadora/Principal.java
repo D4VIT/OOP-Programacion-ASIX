@@ -3,8 +3,18 @@ package Calculadora;
 class Principal
 {
     public static void main(String[] args) {
-        Pantalla.escribir("Hola mundo");
-        String variable = Teclado.leer("Escribe algo por aqui: ");
-        Pantalla.escribir(variable);
+        String[] opciones = {
+            "1.-Sumar",
+            "2.-Restar",
+            "3.-Multiplicar",
+            "4.-Dividir",
+            "5.-Ecuacion de segundo grado"
+        };
+
+        for (String opcion :opciones) {
+            Pantalla.escribir(opcion);
+        }
+
+        String opcion = Teclado.leer("Escoge una opcion: ");
     }
 }
