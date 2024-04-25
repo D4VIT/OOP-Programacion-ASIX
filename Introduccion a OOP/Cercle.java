@@ -4,4 +4,10 @@ public class Cercle {
     public Cercle(double radi) {
         radi = radi;
     }
+
+    public double calcularArea() {
+        return 3.14 * radi * radi;
+    }
+
+    
 }
