@@ -16,4 +16,8 @@ public class ClasseA {
         valorPrimari = vp;
         valorSecundari = vs;
     }
+
+    public int getPrimari() {
+        return valorPrimari;
+    }
 }
