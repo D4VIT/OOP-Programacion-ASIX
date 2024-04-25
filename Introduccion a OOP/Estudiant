@@ -22,4 +22,8 @@ public class Estudiant {
     public int obtenirEdat() {
         return edat;
     }
+
+    public String obtenirCurs() {
+        return curs;
+    }
 }
