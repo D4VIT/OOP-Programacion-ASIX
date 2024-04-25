@@ -1,8 +1,4 @@
 
-'''
-Escriu una classe que representi un estudiant amb propietats com nom, edat i curs. Afegeix un constructor 
-per inicialitzar aquestes propietats i mètodes per obtenir i establir-les
-'''
 
 public class Estudiant {
     private String nom;
