@@ -14,4 +14,8 @@ public class Estudiant {
         edat = estudiantEdat;
         curs = estudiantCurs;
     }
+
+    public String obtenirNom() {
+        return nom;
+    }
 }
