@@ -11,4 +11,9 @@ public class ClasseA {
         valorPrimari = vp;
         valorSecundari = 10;
     }
+
+    public ClasseA(int vp, int vs) {
+        valorPrimari = vp;
+        valorSecundari = vs;
+    }
 }
