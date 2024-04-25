@@ -9,5 +9,7 @@ public class Cercle {
         return 3.14 * radi * radi;
     }
 
-    
+    public double calcularPerimetre() {
+        return 2 * 3.14 * radi;
+    }
 }
