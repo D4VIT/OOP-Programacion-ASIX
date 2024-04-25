@@ -18,4 +18,8 @@ public class Estudiant {
     public String obtenirNom() {
         return nom;
     }
+
+    public int obtenirEdat() {
+        return edat;
+    }
 }
