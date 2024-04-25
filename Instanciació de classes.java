@@ -6,4 +6,9 @@ public class ClasseA {
         valorPrimari = 5;
         valorSecundari = 10;
     }
+
+    public ClasseA(int vp) {
+        valorPrimari = vp;
+        valorSecundari = 10;
+    }
 }
