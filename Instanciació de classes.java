@@ -24,4 +24,8 @@ public class ClasseA {
     public int getSecundari() {
         return valorSecundari;
     }
+    public static void main(String[] args) {
+        ClasseA a = new ClasseA();
+        ClasseA b = new ClasseA(20);
+        ClasseA c = new ClasseA(20, 40);
 }
