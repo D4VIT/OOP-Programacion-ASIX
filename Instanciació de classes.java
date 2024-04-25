@@ -20,4 +20,8 @@ public class ClasseA {
     public int getPrimari() {
         return valorPrimari;
     }
+
+    public int getSecundari() {
+        return valorSecundari;
+    }
 }
