@@ -13,4 +13,13 @@ class PacMan {
         this.vides = vides;
         this.puntuacio = 0;
     }
+
+    public void moure(int novaPosX, int novaPosY) {
+        this.posX = novaPosX;
+        this.posY = novaPosY;
+    }
+
+    public void recolectarBola() {
+        this.puntuacio += 10;
+    }
 }
