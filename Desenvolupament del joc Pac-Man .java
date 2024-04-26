@@ -63,5 +63,22 @@ class Fantasma {
         this.nom = nom;
     }
 
-    
+    public void moure(int novaPosX, int novaPosY) {
+        posX = novaPosX;
+        posY = novaPosY;
+    }
+
+    public int getPosX() {
+        return posX;
+    }
+
+    public int getPosY() {
+        return posY;
+    }
+
+    public String getNom() {
+        return nom;
+    }
 }
+
+
