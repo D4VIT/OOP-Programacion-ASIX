@@ -30,4 +30,8 @@ class PacMan {
     public void perderVida() {
         vides--;
     }
+
+    public boolean detectarColisionFantasma(Fantasma fantasma) {
+        return posX == fantasma.getPosX() && posY == fantasma.getPosY();
+    }
 }
