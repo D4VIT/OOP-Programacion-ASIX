@@ -7,5 +7,6 @@ class PacMan {
     private int vides;
     private int puntuacio;
 
+
     
 }
