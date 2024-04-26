@@ -26,4 +26,8 @@ class PacMan {
     public void recolectarFruita() {
         puntuacio += 100;
     }
+
+    public void perderVida() {
+        vides--;
+    }
 }
