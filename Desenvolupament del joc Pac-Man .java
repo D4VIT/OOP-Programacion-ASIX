@@ -96,4 +96,16 @@ public class PacManGame {
         System.out.println("Fora de joc");
     }
 
+    private static List<Fantasma> inicialitzarFantasmes() {
+        List<Fantasma> fantasmes = new ArrayList<>();
+        fantasmes.add(new Fantasma(1, 1, "Pinky"));
+        return fantasmes;
+    }
+
+    private static void actualitzarJoc(PacMan pacMan, List<Fantasma> fantasmes) {
+        pacMan.moure(1, 2);
+        for (Fantasma fantasma : fantasmes) {
+            if (pacMan.detectarColisionFantasma(fantasma)) {}
+        }
+    }
 }
