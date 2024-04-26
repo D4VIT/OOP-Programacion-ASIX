@@ -105,7 +105,19 @@ public class PacManGame {
     private static void actualitzarJoc(PacMan pacMan, List<Fantasma> fantasmes) {
         pacMan.moure(1, 2);
         for (Fantasma fantasma : fantasmes) {
-            if (pacMan.detectarColisionFantasma(fantasma)) {}
+            if (pacMan.detectarColisionFantasma(fantasma)) {
+                System.out.println("Pac-Man colisiona amb " + fantasma.getNom() + "!");
+                pacMan.perderVida();
+                if (pacMan.getVides() == 0) {
+                    break;
+                }
+
+                pacMan.moure(0, 0);
+
+                System.out.println("Pac-Man reiniciat a la posicio inicial.");
+            }
         }
+
+                System.out.println("Puntuacio; " + pacMan.getPuntuacio());
     }
 }
