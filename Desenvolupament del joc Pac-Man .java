@@ -22,4 +22,8 @@ class PacMan {
     public void recolectarBola() {
         this.puntuacio += 10;
     }
+
+    public void recolectarFruita() {
+        puntuacio += 100;
+    }
 }
