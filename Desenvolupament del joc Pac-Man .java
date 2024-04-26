@@ -81,4 +81,19 @@ class Fantasma {
     }
 }
 
+public class PacManGame {
+    public static void main(String[] args) {
+        PacMan pacMan = new PacMan(0, 0, 3);
+        List<Fantasma> fantasmes = inicialitzarFantasmes();
+        while (pacMan.getVides() > 0) {
+            actualitzarJoc(pacMan, fantasmes);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println("Fora de joc");
+    }
 
+}
