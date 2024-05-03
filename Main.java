@@ -77,5 +77,17 @@ public class Main {
         System.out.println("Cantidad de instancias de árboles: " + BinaryTree.getInstanceCount());
 
         System.gc();
+
+        System.out.println("Recorrido del primer árbol de enteros (ramas derechas):");
+        intTree1.printRightBranch(intTree1.root);
+
+        System.out.println("Recorrido del segundo árbol de enteros (ramas izquierdas):");
+        intTree2.printLeftBranch(intTree2.root);
+
+        System.out.println("Cantidad de instancias de árboles: " + BinaryTree.getInstanceCount());
+
+        System.gc();
+
+        System.out.println("Cantidad de instancias de árboles: " + BinaryTree.getInstanceCount());
     }
 }
