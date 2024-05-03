@@ -63,6 +63,11 @@ public class Main {
         BinaryTree<Integer>intTree1 = new BinaryTree<>();
         intTree1.insert(1, 5);
 
+        BinaryTree<Integer>intTree2 = new BinaryTree<>();
+        intTree2.insert(1, 5);
+
+        System.out.println("Cantidad de instancias de árboles: " + BinaryTree.getInstanceCount());
+
         
     }
 }
