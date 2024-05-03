@@ -39,5 +39,12 @@ class BinaryTree<T> {
         return current;
     }
 
+    void printRightBranch(Node<T>node) {
+        if (node !=null) {
+            System.out.println(node.value);
+            printRightBranch(node.right);
+        }
+    }
+
     
 }
