@@ -59,5 +59,10 @@ class BinaryTree<T> {
 }
 
 public class Main {
-    
+    public static void main(String[] args) {
+        BinaryTree<Integer>intTree1 = new BinaryTree<>();
+        intTree1.insert(1, 5);
+
+        
+    }
 }
