@@ -52,4 +52,10 @@ class BinaryTree<T> {
             printLeftBranch(node.left);
         }
     }
+
+    static int getInstanceCount() {
+        return instanceCount;
+    }
 }
+
+
