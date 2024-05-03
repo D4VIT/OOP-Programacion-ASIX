@@ -1,4 +1,6 @@
-class Node {
-    int value;
-    Nodeleft, right;
+class Node <T> {
+    T value;
+    Node<T> left;
+    Node<T> right;
+    int maxDepth;
 }
