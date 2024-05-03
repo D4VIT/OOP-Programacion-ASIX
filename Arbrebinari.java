@@ -12,7 +12,18 @@ class Node<T> {
     }
 }
 
-class BinaryTre<T> {
+class BinaryTree<T> {
     private Node<T> root;
     private static int instanceCount = 0;
+
+    BinaryTree() {
+        this.root = null;
+        instanceCount++;
+    }
+
+    void insert(T value, int maxDepth) {
+        root = insertRecursive(root, value, maxDepth);
+    }
+
+    private Node<T> insertRecursive(Node<T> current, T value, int maxDepth)
 }
