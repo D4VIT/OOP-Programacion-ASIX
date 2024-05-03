@@ -75,5 +75,7 @@ public class Main {
         charTree2.insert('A', 3);
 
         System.out.println("Cantidad de instancias de árboles: " + BinaryTree.getInstanceCount());
+
+        System.gc();
     }
 }
