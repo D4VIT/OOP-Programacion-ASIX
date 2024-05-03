@@ -25,5 +25,19 @@ class BinaryTree<T> {
         root = insertRecursive(root, value, maxDepth);
     }
 
-    private Node<T> insertRecursive(Node<T> current, T value, int maxDepth)
+    private Node<T> insertRecursive(Node<T> current, T value, int maxDepth) {
+        if (current == null) {
+            return new Node<>(value, maxDepth);
+        }
+
+        if (current.left == null) {
+            current.left = insertRecursive(current.right, value, maxDepth - 1);
+        } else if (current.right == null) {
+            current.right = insertRecursive(current.right, value, maxDepth - 1);
+        }
+
+        return current;
+    }
+
+    
 }
