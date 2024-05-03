@@ -1,4 +1,4 @@
-class Node <T> {
+class Node<T> {
     T value;
     Node<T> left;
     Node<T> right;
@@ -10,4 +10,9 @@ class Node <T> {
         this.left = null;
         this.right = null;
     }
+}
+
+class BinaryTre<T> {
+    private Node<T> root;
+    private static int instanceCount = 0;
 }
