@@ -68,6 +68,12 @@ public class Main {
 
         System.out.println("Cantidad de instancias de árboles: " + BinaryTree.getInstanceCount());
 
-        
+        BinaryTree<Character>charTree1 = new BinaryTree<>();
+        charTree1.insert('A', 3);
+
+        BinaryTree<Character> charTree2 = new BinaryTree<>();
+        charTree2.insert('A', 3);
+
+        System.out.println("Cantidad de instancias de árboles: " + BinaryTree.getInstanceCount());
     }
 }
