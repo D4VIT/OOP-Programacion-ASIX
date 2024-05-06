@@ -38,6 +38,8 @@ public class ProgramaProva {
     public static void main(String[] args) {
         Media media = new Media("Cancion X", "Artista Y", 180);
 
-        S
+        System.out.println("Nombre: " + media.getNom());
+        System.out.println("Autor: " + media.getAutor());
+        System.out.println("Duración (segundos): " + media.getDurada());
     }
 }
