@@ -6,4 +6,8 @@ public class Tarea {
         this.descripcion = descripcion;
         this.estado = estado;
     }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
 }
