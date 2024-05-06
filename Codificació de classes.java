@@ -33,3 +33,11 @@ public class Media {
         this.duradaSegons = d;
     }
 }
+
+public class ProgramaProva {
+    public static void main(String[] args) {
+        Media media = new Media("Cancion X", "Artista Y", 180);
+
+        S
+    }
+}
