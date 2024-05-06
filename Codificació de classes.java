@@ -9,5 +9,27 @@ public class Media {
         this.duradaSegons = duradaSegons;
     }
 
-    
+    public String getNom() {
+        return nom;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public int getDurada() {
+        return duradaSegons;
+    }
+
+    public void setNom(String n) {
+        this.nom = n;
+    }
+
+    public void setAutor(String a) {
+        this.autor = a;
+    }
+
+    public void setDurada(int d) {
+        this.duradaSegons = d;
+    }
 }
