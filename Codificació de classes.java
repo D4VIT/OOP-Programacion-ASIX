@@ -41,5 +41,9 @@ public class ProgramaProva {
         System.out.println("Nombre: " + media.getNom());
         System.out.println("Autor: " + media.getAutor());
         System.out.println("Duración (segundos): " + media.getDurada());
+
+        media.setNom("Otra canción");
+        media.setAutor("Otro artista");
+        media.setDurada(200);
     }
 }
