@@ -26,4 +26,8 @@ public class GamaManager {
         Character character1 = new Character("Gandalf", 10, 100, 150, "Gràvida de llum", "Roba de mag");
         Character character2 = new Character("Aragorn", 8, 120, 80, "Andúril", "Elfos");
 
+        GameElement<Character> gameElement1 = new GameElement<>("Elemento 1", character1);
+        GameElement<Character> gameElement2 = new GameElement<>("Elemento 2", character2);
+
+}
 }
