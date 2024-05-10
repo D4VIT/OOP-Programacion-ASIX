@@ -16,5 +16,29 @@ public class Character extends GameElement<Character> {
         this.armor = armor;
     }
 
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public int getHealthPoints(int healthPoints) {
+        this.healthPoints = healthPoints;
+    }
+
+    public int getManaPoints() {
+        return manaPoints;
+    }
+
+    public void setManaPoints(int manaPoints) {
+        this.manaPoints = manaPoints;
+    }
+
+    public String getWeapon() {
+        return weapon;
+    }
+
     
 }
