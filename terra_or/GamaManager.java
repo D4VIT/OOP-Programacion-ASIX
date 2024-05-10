@@ -20,5 +20,10 @@ public class GamaManager {
         }
     }
 
-    
+    public static List<GameElement<Character>> loadElementsFromXML(String filePath) {
+        List<GameElement<Character>> elements = new ArrayList<>();
+
+        Character character1 = new Character("Gandalf", 10, 100, 150, "Gràvida de llum", "Roba de mag");
+        Character character2 = new Character("Aragorn", 8, 120, 80, "Andúril", "Elfos");
+
 }
