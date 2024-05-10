@@ -1,2 +1,0 @@
-package terra_or;
-
