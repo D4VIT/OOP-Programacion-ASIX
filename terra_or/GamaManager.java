@@ -29,5 +29,10 @@ public class GamaManager {
         GameElement<Character> gameElement1 = new GameElement<>("Elemento 1", character1);
         GameElement<Character> gameElement2 = new GameElement<>("Elemento 2", character2);
 
+        elements.add(gameElement1);
+        elements.add(gameElement2);
+
+        return elements;
+
 }
 }
