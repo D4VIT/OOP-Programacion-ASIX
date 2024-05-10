@@ -7,7 +7,7 @@ public class Character extends GameElement<Character> {
     private String weapon;
     private String armor;
 
-    public Character(String name, int level, int healthPoints, int manaPoints, Strin weapon, String armor) {
+    public Character(String name, int level, int healthPoints, int manaPoints, String weapon, String armor) {
         super(name, null);
         this.level = level;
         this.healthPoints = healthPoints;
@@ -40,5 +40,15 @@ public class Character extends GameElement<Character> {
         return weapon;
     }
 
-    
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
+    }
+
+    public String getArmor() {
+        return armor;
+    }
+
+    public void setArmor(String armor) {
+        this.armor = armor;
+    }
 }
