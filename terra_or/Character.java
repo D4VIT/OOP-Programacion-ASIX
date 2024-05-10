@@ -1,4 +1,4 @@
-package Adventuregame;
+package terra_or;
 
 public class Character extends GameElement<Character> {
     private int level;
