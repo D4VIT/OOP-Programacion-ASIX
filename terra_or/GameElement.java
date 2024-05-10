@@ -18,6 +18,6 @@ public class GameElement<T> {
     }
 
     public void setValue(T value) {
-        this
+        this.value = value;
     }
 }
