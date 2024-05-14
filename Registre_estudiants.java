@@ -13,3 +13,14 @@ class Estudiant {
         this.edat = edat;
         this.matèries = new ArrayList<>();
     }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getCognom() {
+        return cognom;
+    }
+
+    
+}
