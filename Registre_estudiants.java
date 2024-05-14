@@ -22,5 +22,11 @@ class Estudiant {
         return cognom;
     }
 
-    
+    public int getEdat() {
+        return edat;
+    }
+
+    public List<String> getMatèries() {
+        return matèries;
+    }
 }
