@@ -29,4 +29,12 @@ class Estudiant {
     public List<String> getMatèries() {
         return matèries;
     }
+
+    public void afegirMatèria(String matèria) {
+        matèries.add(matèria);
+    }
+
+    public void eliminarMatèria(String matèria) {
+        matèries.remove(matèria);
+    }
 }
