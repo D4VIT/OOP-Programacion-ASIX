@@ -68,3 +68,16 @@ public class GestorEstudiants {
             }
         }
     }
+
+    private static void mostrarMenu() {
+        System.out.println("-------- Gestor d'Estudiants --------");
+        System.out.println("1. Afegir un nou estudiant");
+        System.out.println("2. Afegir una nova matèria a un estudiant");
+        System.out.println("3. Eliminar una matèria d'un estudiant");
+        System.out.println("4. Mostrar tots els estudiants");
+        System.out.println("5. Mostrar les matèries d'un estudiant específic");
+        System.out.println("6. Sortir");
+        System.out.println("--------------------------------------");
+        System.out.print("Selecciona una opció: ");
+    }
+}
