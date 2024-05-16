@@ -89,5 +89,13 @@ public class GestorEstudiants {
         System.out.println("Afegir estudiant - Implementación pendiente");
     }
 
+    private static void afegirMateriaEstudiant() {
+        System.out.println("Afegir matèria a un estudiant - Implementación pendiente");
+    }
+
+    private static void eliminarMateriaEstudiant() {
+        System.out.println("Eliminar matèria d'un estudiant - Implementación pendiente");
+    }
+
     
 }
