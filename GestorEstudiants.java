@@ -97,5 +97,11 @@ public class GestorEstudiants {
         System.out.println("Eliminar matèria d'un estudiant - Implementación pendiente");
     }
 
-    
+    private static void mostrarEstudiants() {
+        System.out.println("Mostrar tots els estudiants - Implementaciónpendiente");
+    }
+
+    private static void mostrarMateriesEstudiant() {
+        System.out.println("Mostrar les matèries d'un estudiant específic - Implementación pendiente");
+    }
 }
