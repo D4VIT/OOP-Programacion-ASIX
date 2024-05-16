@@ -80,4 +80,14 @@ public class GestorEstudiants {
         System.out.println("--------------------------------------");
         System.out.print("Selecciona una opció: ");
     }
+
+    private static int obtenerOpcion() {
+        return 1;
+    }
+
+    private static void afegirEstudiant() {
+        System.out.println("Afegir estudiant - Implementación pendiente");
+    }
+
+    
 }
