@@ -111,4 +111,14 @@ public class TaskManager {
         String fileName = scanner.next();
         TaskManager taskManager = new TaskManager(fileName);
 
-        
+        while (true) {
+            System.out.println("1. Add task");
+            System.out.println("2. Modify task");
+            System.out.println("3. Delete task");
+            System.out.println("4. Display tasks");
+            System.out.println("5. Exit");
+            System.out.print("Choose an option: ");
+            int option = scanner.nextInt();
+
+
+        }
