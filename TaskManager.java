@@ -81,5 +81,29 @@ public class TaskManager {
         }
     }
 
+    public void addTask(Task task) {
+        tasks.add(task);
+        saveTasks();
+    }
+
+
+    public void modifyTask(int index, Task task) {
+        tasks.set(index, task);
+        saveTasks();
+    }
+
+
+    public void deleteTask(int index) {
+        tasks.remove(index);
+        saveTasks();
+    }
+
+
+    public void displayTasks() {
+        for (int i = 0; i < tasks.size(); i++) {
+            System.out.println((i + 1) + ". " + tasks.get(i).getTitle());
+        }
+    }
+
     
 }
