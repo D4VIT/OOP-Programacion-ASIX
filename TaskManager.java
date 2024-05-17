@@ -105,5 +105,10 @@ public class TaskManager {
         }
     }
 
-    
-}
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter file name: ");
+        String fileName = scanner.next();
+        TaskManager taskManager = new TaskManager(fileName);
+
+        
