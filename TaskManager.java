@@ -38,3 +38,14 @@ class Task {
         return title + "," + description + "," + deadline + "," + status;
     }
 }
+
+public class TaskManager {
+    private List<Task> tasks;
+    private String fileName;
+
+    public TaskManager(String fileName) {
+        this.fileName = fileName;
+        this.tasks = new ArrayList<>();
+        loadTasks();
+    }
+}
