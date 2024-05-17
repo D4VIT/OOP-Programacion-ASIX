@@ -120,5 +120,49 @@ public class TaskManager {
             System.out.print("Choose an option: ");
             int option = scanner.nextInt();
 
-
+            if (option == 1) {
+                System.out.print("Enter task title: ");
+                String title = scanner.next();
+                System.out.print("Enter task description: ");
+                String description = scanner.next();
+                System.out.print("Enter task deadline: ");
+                String deadline = scanner.next();
+                System.out.print("Enter task status: ");
+                String status =scanner.next();
+                Task task = new Task(title, description, deadline, status);
+                taskManager.addTask(task);
+            } else if (option == 2) {
+                System.out.print("Enter task index: ");
+                int index = scanner.nextInt();
+                if (index >= 1 && index <= taskManager.tasks.size()) {
+                    System.out.print("Enter task title: ");
+                    String title = scanner.next();
+                    System.out.print("Enter task description: ");
+                    String description = scanner.next();
+                    System.out.print("Enter task deadline: ");
+                    String deadline = scanner.next();
+                    System.out.print("Enter task status: ");
+                    String status = scanner.next();
+                    Task task = new Task(title, description, deadline, status);
+                    taskManager.modifyTask(index - 1, task);
+                } else {
+                    System.out.println("Invalid task index");
+                }
+            } else if (option == 3) {
+                System.out.print("Enter task index: ");
+                int index = scanner.nextInt();
+                if (index >= 1 && index <= taskManager.tasks.size()) {
+                    taskManager.deleteTask(index - 1);
+                } else {
+                    System.out.println("Invalid task index");
+                }
+            } else if (option == 4) {
+                taskManager.displayTasks();
+            } else if (option == 5) {
+                break;
+            } else {
+                System.out.println("Invalid option");
+            }
         }
+    }
+}
