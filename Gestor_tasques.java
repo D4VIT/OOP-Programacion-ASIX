@@ -15,4 +15,10 @@ class Task {
         this.deadline = deadline;
         this.status = status;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    
 }
