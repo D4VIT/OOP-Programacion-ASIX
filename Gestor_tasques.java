@@ -6,7 +6,7 @@ import java.util.List;
 class Task {
     private String title;
     private String description;
-    private String deadLine;
+    private String deadline;
     private String status;
 
     public Task(String title, String description, String deadline, String status) {
