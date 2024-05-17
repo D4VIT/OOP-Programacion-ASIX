@@ -68,4 +68,18 @@ public class TaskManager {
             System.out.println("Error loading tasks: " + e.getMessage());
         }
     }
+
+    private void saveTasks() {
+        try {
+            FileWriter fileWriter = new FileWriter(fileName);
+            for (Task task : tasks) {
+                fileWriter.write(task.toString() + "\n");
+            }
+            fileWriter.close();
+        } catch (Exception e) {
+            System.out.println("Error saving tasks: " + e.getMessage());
+        }
+    }
+
+    
 }
