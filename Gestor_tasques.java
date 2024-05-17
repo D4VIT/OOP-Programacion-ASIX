@@ -20,5 +20,13 @@ class Task {
         return title;
     }
 
+    public String getDeadline() {
+        return deadline;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
     
 }
