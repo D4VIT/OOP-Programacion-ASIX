@@ -49,7 +49,7 @@ public class Aplicaciorobot extends JFrame {
         super("Robot Aplicacio");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        setSize(300, 200);
+        setSize(500, 500);
         setLocationRelativeTo(null);
 
         robot = new Robot();
