@@ -1,0 +1,3 @@
+Moviendo hacia adelante
+Moviendo hacia atrás
+Girando a la izquierda
