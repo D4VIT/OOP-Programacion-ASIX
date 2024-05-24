@@ -21,5 +21,7 @@ public class Aplicaciorobot extends JFrame {
 
         JButton turnRightButton = new JButton("Mover Derecha");
         turnRightButton.addActionListener(e -> robot.turnRight());
+
+        JPanel layout = new JPanel(new GridLayout(3, 1, 10, 10));
     }
 }
