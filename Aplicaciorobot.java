@@ -10,5 +10,7 @@ public class Aplicaciorobot extends JFrame {
 
         setSize(300, 200);
         setLocationRelativeTo(null);
+
+        robot = new Robot();
     }
 }
