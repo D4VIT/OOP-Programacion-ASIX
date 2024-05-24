@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.io.*;
 
 public class Aplicaciorobot extends JFrame {
     private static class Robot {
@@ -43,6 +42,9 @@ public class Aplicaciorobot extends JFrame {
 
         JButton turnRightButton = new JButton("Girar Derecha");
         turnRightButton.addActionListener(e -> robot.turnRight());
+
+        JButton saveMovementButton = new JButton("Guardar Movimientos");
+        saveMovementButton.addActionListener(e -> robot.saveMovementLog());
 
         JPanel layout = new JPanel(new GridLayout(4, 1, 10, 10));
         layout.add(moveForwardButton);
