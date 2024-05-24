@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Aplicaciorobot extends JFrame {
     private static class Robot {
@@ -18,6 +20,16 @@ public class Aplicaciorobot extends JFrame {
         public void turnRight() {
             System.out.println("Girando a la derecha");
         }
+
+        public void saveMovementLog() {
+            try {
+                FileWriter writer = new FileWriter("movementLog.txt");
+                writer.write(movementLog.toString());
+                writer.close();
+                System.out.println("Movimientos guardados en el archivo 'movementLog.txt'");
+            } catch (IOException e) {
+                System.out.println("Error al guardar los movimientos: " + e.getMessage());
+            }
     }
 
     private Robot robot;
