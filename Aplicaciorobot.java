@@ -7,5 +7,7 @@ public class Aplicaciorobot extends JFrame {
     public Aplicaciorobot() {
         super("Robot Aplicacio");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        setSize(300, 200);
     }
 }
