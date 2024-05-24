@@ -12,5 +12,7 @@ public class Aplicaciorobot extends JFrame {
         setLocationRelativeTo(null);
 
         robot = new Robot();
+
+        JButton moveForwardButton = new JButton("Mover Adelante");
     }
 }
