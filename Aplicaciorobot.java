@@ -29,4 +29,10 @@ public class Aplicaciorobot extends JFrame {
         layout.add(turnRightButton);
         add(layout, BorderLayout.CENTER);
     }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            new Aplicaciorobot().setVisible(true);
+        });
+    }
 }
