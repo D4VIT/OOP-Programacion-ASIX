@@ -20,6 +20,6 @@ public class Aplicaciorobot extends JFrame {
         turnLeftButton.addActionListener(e -> robot.turnLeft());
 
         JButton turnRightButton = new JButton("Mover Derecha");
-        
+        turnRightButton.addActionListener(e -> robot.turnRight());
     }
 }
