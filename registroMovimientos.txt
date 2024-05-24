@@ -2,15 +2,3 @@ Moviendo hacia adelante
 Moviendo hacia atrás
 Girando a la izquierda
 Girando a la derecha
-Girando a la izquierda
-Moviendo hacia atrás
-Moviendo hacia adelante
-Moviendo hacia atrás
-Girando a la derecha
-Girando a la izquierda
-Moviendo hacia atrás
-Moviendo hacia adelante
-Moviendo hacia atrás
-Girando a la izquierda
-Girando a la derecha
-Girando a la derecha
