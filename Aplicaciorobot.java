@@ -18,5 +18,8 @@ public class Aplicaciorobot extends JFrame {
 
         JButton turnLeftButton = new JButton("Mover Izquierda");
         turnLeftButton.addActionListener(e -> robot.turnLeft());
+
+        JButton turnRightButton = new JButton("Mover Derecha");
+        
     }
 }
