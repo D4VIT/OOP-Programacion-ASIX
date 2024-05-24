@@ -2,6 +2,20 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Aplicaciorobot extends JFrame {
+    private static class Robot {
+        public void moveForward() {
+            System.out.println("Moviendo hacia adelante");
+        }
+
+        public void turnLeft() {
+            System.out.println("Girando a la izquierda");
+        }
+
+        public void turnRight() {
+            System.out.println("Girando a la derecha");
+        }
+    }
+
     private Robot robot;
 
     public Aplicaciorobot() {
@@ -16,14 +30,13 @@ public class Aplicaciorobot extends JFrame {
         JButton moveForwardButton = new JButton("Mover Adelante");
         moveForwardButton.addActionListener(e -> robot.moveForward());
 
-        JButton turnLeftButton = new JButton("Mover Izquierda");
+        JButton turnLeftButton = new JButton("Girar Izquierda");
         turnLeftButton.addActionListener(e -> robot.turnLeft());
 
-        JButton turnRightButton = new JButton("Mover Derecha");
+        JButton turnRightButton = new JButton("Girar Derecha");
         turnRightButton.addActionListener(e -> robot.turnRight());
 
         JPanel layout = new JPanel(new GridLayout(3, 1, 10, 10));
-
         layout.add(moveForwardButton);
         layout.add(turnLeftButton);
         layout.add(turnRightButton);
