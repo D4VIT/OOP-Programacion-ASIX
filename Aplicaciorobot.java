@@ -46,11 +46,12 @@ public class Aplicaciorobot extends JFrame {
         JButton saveMovementButton = new JButton("Guardar Movimientos");
         saveMovementButton.addActionListener(e -> robot.saveMovementLog());
 
-        JPanel layout = new JPanel(new GridLayout(4, 1, 10, 10));
+        JPanel layout = new JPanel(new GridLayout(5, 1, 10, 10));
         layout.add(moveForwardButton);
         layout.add(moveBackwardButton);
         layout.add(turnLeftButton);
         layout.add(turnRightButton);
+        layout.add(saveMovementButton);
         add(layout, BorderLayout.CENTER);
     }
 
