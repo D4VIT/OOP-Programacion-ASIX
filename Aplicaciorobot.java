@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.io.*;
 
 public class Aplicaciorobot extends JFrame {
     private static class Robot {
