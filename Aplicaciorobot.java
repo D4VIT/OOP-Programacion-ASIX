@@ -23,5 +23,10 @@ public class Aplicaciorobot extends JFrame {
         turnRightButton.addActionListener(e -> robot.turnRight());
 
         JPanel layout = new JPanel(new GridLayout(3, 1, 10, 10));
+
+        layout.add(moveForwardButton);
+        layout.add(turnLeftButton);
+        layout.add(turnRightButton);
+        add(layout, BorderLayout.CENTER);
     }
 }
