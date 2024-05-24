@@ -9,5 +9,6 @@ public class Aplicaciorobot extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         setSize(300, 200);
+        setLocationRelativeTo(null);
     }
 }
