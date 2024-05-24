@@ -2,34 +2,45 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Aplicaciorobot extends JFrame {
     private static class Robot {
+        private List<String> registroMovimientos = new ArrayList<>();
+
         public void moveForward() {
             System.out.println("Moviendo hacia adelante");
+            registroMovimientos.add("Moviendo hacia adelante");
         }
 
         public void moveBackward() {
             System.out.println("Moviendo hacia atrás");
+            registroMovimientos.add("Moviendo hacia atrás");
         }
 
         public void turnLeft() {
             System.out.println("Girando a la izquierda");
+            registroMovimientos.add("Girando a la izquierda");
         }
 
         public void turnRight() {
             System.out.println("Girando a la derecha");
+            registroMovimientos.add("Girando a la derecha");
         }
 
         public void saveMovementLog() {
             try {
-                FileWriter writer = new FileWriter("movementLog.txt");
-                writer.write(movementLog.toString());
+                FileWriter writer = new FileWriter("registroMovimientos.txt");
+                for (String movimiento : registroMovimientos) {
+                    writer.write(movimiento + "\n");
+                }
                 writer.close();
-                System.out.println("Movimientos guardados en el archivo 'movementLog.txt'");
+                System.out.println("Movimientos guardados en el archivo 'registroMovimientos.txt'");
             } catch (IOException e) {
                 System.out.println("Error al guardar los movimientos: " + e.getMessage());
             }
+        }
     }
 
     private Robot robot;
@@ -73,4 +84,5 @@ public class Aplicaciorobot extends JFrame {
         });
     }
 }
+
 
