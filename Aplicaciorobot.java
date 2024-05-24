@@ -7,6 +7,10 @@ public class Aplicaciorobot extends JFrame {
             System.out.println("Moviendo hacia adelante");
         }
 
+        public void moveBackward() {
+            System.out.println("Moviendo hacia atrás");
+        }
+
         public void turnLeft() {
             System.out.println("Girando a la izquierda");
         }
@@ -30,14 +34,18 @@ public class Aplicaciorobot extends JFrame {
         JButton moveForwardButton = new JButton("Mover Adelante");
         moveForwardButton.addActionListener(e -> robot.moveForward());
 
+        JButton moveBackwardButton = new JButton("Mover Atrás");
+        moveBackwardButton.addActionListener(e -> robot.moveBackward());
+
         JButton turnLeftButton = new JButton("Girar Izquierda");
         turnLeftButton.addActionListener(e -> robot.turnLeft());
 
         JButton turnRightButton = new JButton("Girar Derecha");
         turnRightButton.addActionListener(e -> robot.turnRight());
 
-        JPanel layout = new JPanel(new GridLayout(3, 1, 10, 10));
+        JPanel layout = new JPanel(new GridLayout(4, 1, 10, 10));
         layout.add(moveForwardButton);
+        layout.add(moveBackwardButton);
         layout.add(turnLeftButton);
         layout.add(turnRightButton);
         add(layout, BorderLayout.CENTER);
@@ -49,3 +57,4 @@ public class Aplicaciorobot extends JFrame {
         });
     }
 }
+
