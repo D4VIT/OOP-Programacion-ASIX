@@ -14,5 +14,6 @@ public class Aplicaciorobot extends JFrame {
         robot = new Robot();
 
         JButton moveForwardButton = new JButton("Mover Adelante");
+        moveForwardButton.addActionListener(e -> robot.moveForward());
     }
 }
